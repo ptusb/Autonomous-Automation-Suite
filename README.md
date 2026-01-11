@@ -1,0 +1,52 @@
+# 🤖 Autonomous Automation Suite
+
+**The Blueprint for the "Autonomous CEO" | Architected by [Piyush Deepak Tayade](https://github.com/ptusb)**
+
+[![Status: Production-Ready](https://img.shields.io/badge/Status-Production--Ready-blue)](https://github.com/ptusb)
+[![n8n-Workflow](https://img.shields.io/badge/Orchestration-n8n-red)](https://n8n.io)
+[![MCP-Powered](https://img.shields.io/badge/Bridge-MCP-green)](https://modelcontextprotocol.io)
+
+This repository contains a curated collection of high-fidelity automation workflows and MCP servers designed to eliminate manual business operations. From social media orchestration to local system intelligence, this suite represents the shift toward autonomous enterprise architecture.
+
+---
+
+## 🚀 Key Components
+
+### 1. Zero-to-Hero Social Media Engine (`/workflows`)
+
+A comprehensive **n8n orchestration** that handles the complete content lifecycle without human intervention.
+
+- **Trend Detection:** Scrapes viral topics via AI-driven sentiment analysis.
+- **Content Creation:** Orchestrates LLMs to generate copy and Adobe Cloud APIs for visual assets.
+- **Multichannel Deployment:** Automatically schedules and posts to Instagram, LinkedIn, and X.
+- **Lead Qualification:** Integrated calling/WhatsApp bots to nurture engagement.
+
+### 2. System Intelligence MCP (`/mcp-servers/system-intel`)
+
+A custom **Model Context Protocol** server that allows LLMs to interact with the local operating system to perform health checks, process management, and resource optimization.
+
+---
+
+## 🛠 Tech Stack
+
+- **Automation:** n8n, Webhooks, REST APIs.
+- **AI Orchestration:** Model Context Protocol (MCP), OpenAI/Claude SDKs.
+- **Creative:** Adobe Creative Cloud Integration, Firefly API.
+- **Backend:** Node.js, TypeScript, Python.
+
+---
+
+## 📁 Repository Structure
+
+```text
+├── workflows/
+│   ├── social-media-orchestrator.json  # Comprehensive n8n template
+│   └── lead-qualification-bot.json     # WhatsApp/Voice agent logic
+├── mcp-servers/
+│   └── system-intel/                   # Node.js MCP server code
+└── README.md
+```
+
+## 🎯 Vision
+
+The goal of this suite is to build "One-Click" ecosystems. By leveraging agentic behaviors and robust automation trees, we allow human creativity to scale exponentially while the machines handle the execution.

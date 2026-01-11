@@ -1,0 +1,77 @@
+{
+    "name": "Social Media Zero-to-Hero",
+    "nodes": [
+        {
+            "parameters": {
+                "rule": {
+                    "interval": [
+                        {
+                            "field": "hours",
+                            "hoursInterval": 24
+                        }
+                    ]
+                }
+            },
+            "id": "1",
+            "name": "Schedule Trigger",
+            "type": "n8n-nodes-base.scheduleTrigger",
+            "typeVersion": 1,
+            "position": [
+                250,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "model": "gpt-4o",
+                "prompt": "=Generate a viral LinkedIn post about {{ $node[\"Schedule Trigger\"].json[\"date\"] }} trends in AI Automation."
+            },
+            "id": "2",
+            "name": "AI Content Generator",
+            "type": "n8n-nodes-base.openAi",
+            "typeVersion": 1,
+            "position": [
+                450,
+                300
+            ]
+        },
+        {
+            "parameters": {
+                "resource": "post",
+                "text": "={{ $json.message }}"
+            },
+            "id": "3",
+            "name": "LinkedIn Post",
+            "type": "n8n-nodes-base.linkedin",
+            "typeVersion": 1,
+            "position": [
+                650,
+                300
+            ]
+        }
+    ],
+    "connections": {
+        "Schedule Trigger": {
+            "main": [
+                [
+                    {
+                        "node": "AI Content Generator",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        },
+        "AI Content Generator": {
+            "main": [
+                [
+                    {
+                        "node": "LinkedIn Post",
+                        "type": "main",
+                        "index": 0
+                    }
+                ]
+            ]
+        }
+    }
+}
