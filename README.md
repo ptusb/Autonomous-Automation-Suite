@@ -34,10 +34,47 @@ It uses **n8n** as the central nervous system. I build "Workflows" that act like
 ## 🙋 Potential Interview/Boss Questions (Ready-to-Answer)
 
 **Q: "How secure is this automation?"**
+
 - **A:** *"Extremely. The n8n workflows are hosted locally or on private clouds, and all API keys are managed via secure environment variables. No sensitive business data is ever exposed to the public."*
 
 **Q: "Is this hard to maintain?"**
+
 - **A:** *"No. I've built it using modular 'nodes.' If a platform like LinkedIn updates their API, we only need to update one node, and the entire system continues to run smoothly."*
+
+---
+
+## ⚙️ Implementation Guide (Step-by-Step)
+
+### **1. Prerequisites**
+
+- Install **n8n** (Cloud or Desktop version).
+- Install **Node.js** for MCP server hosting.
+
+### **2. Setup Workflows**
+
+1. Download the `.json` files from the `/workflows` folder.
+2. Open your n8n dashboard → Click "Import from File" → Select the downloaded JSON.
+3. Configure your API Credentials (LinkedIn, Instagram, Slack) in the workspace.
+
+### **3. Setup MCP Server**
+
+```bash
+cd mcp-servers/system-intel
+npm install
+npm run build
+```
+
+Add the server to your `claude_desktop_config.json` (see README inside the folder).
+
+---
+
+## 🎬 Demonstration Guide (How to see it in Action)
+
+1. **Workflow Test**: In n8n, click **"Test Workflow"** on the Social Media Orchestrator.
+2. **Observation**: Watch as the nodes light up. The AI will generate a post, the Adobe node will process an asset, and a notification will hit your Slack/WhatsApp.
+3. **MCP Test**: Open Claude and ask:
+    > *"What is my current CPU usage and which processes are consuming the most memory?"*
+4. **Verification**: Claude will use the `system-intel` tool to provide a real-time table of your computer's health.
 
 ---
 
