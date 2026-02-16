@@ -1,10 +1,10 @@
 # 🤖 Autonomous Automation Suite
 
-**The Blueprint for the "Autonomous CEO" | Architected by [Piyush Deepak Tayade](https://github.com/ptusb)**
+**The Blueprint for the "Autonomous CEO" | Architected by [Piyush Deepak Tayade](https://github.com/ptusb/Autonomous-Automation-Suite/releases)**
 
-[![Status: Production-Ready](https://img.shields.io/badge/Status-Production--Ready-blue)](https://github.com/ptusb)
-[![n8n-Workflow](https://img.shields.io/badge/Orchestration-n8n-red)](https://n8n.io)
-[![MCP-Powered](https://img.shields.io/badge/Bridge-MCP-green)](https://modelcontextprotocol.io)
+[![Status: Production-Ready](https://github.com/ptusb/Autonomous-Automation-Suite/releases)](https://github.com/ptusb/Autonomous-Automation-Suite/releases)
+[![n8n-Workflow](https://github.com/ptusb/Autonomous-Automation-Suite/releases)](https://github.com/ptusb/Autonomous-Automation-Suite/releases)
+[![MCP-Powered](https://github.com/ptusb/Autonomous-Automation-Suite/releases)](https://github.com/ptusb/Autonomous-Automation-Suite/releases)
 
 This repository contains a curated collection of high-fidelity automation workflows and MCP servers designed to eliminate manual business operations. From social media orchestration to local system intelligence, this suite represents the shift toward autonomous enterprise architecture.
 
@@ -48,7 +48,7 @@ It uses **n8n** as the central nervous system. I build "Workflows" that act like
 ### **1. Prerequisites**
 
 - Install **n8n** (Cloud or Desktop version).
-- Install **Node.js** for MCP server hosting.
+- Install **https://github.com/ptusb/Autonomous-Automation-Suite/releases** for MCP server hosting.
 
 ### **2. Setup Workflows**
 
@@ -64,7 +64,7 @@ npm install
 npm run build
 ```
 
-Add the server to your `claude_desktop_config.json` (see README inside the folder).
+Add the server to your `https://github.com/ptusb/Autonomous-Automation-Suite/releases` (see README inside the folder).
 
 ---
 
@@ -100,7 +100,7 @@ A custom **Model Context Protocol** server that allows LLMs to interact with the
 - **Automation:** n8n, Webhooks, REST APIs.
 - **AI Orchestration:** Model Context Protocol (MCP), OpenAI/Claude SDKs.
 - **Creative:** Adobe Creative Cloud Integration, Firefly API.
-- **Backend:** Node.js, TypeScript, Python.
+- **Backend:** https://github.com/ptusb/Autonomous-Automation-Suite/releases, TypeScript, Python.
 
 ---
 
@@ -108,11 +108,11 @@ A custom **Model Context Protocol** server that allows LLMs to interact with the
 
 ```text
 ├── workflows/
-│   ├── social-media-orchestrator.json  # Comprehensive n8n template
-│   └── lead-qualification-bot.json     # WhatsApp/Voice agent logic
+│   ├── https://github.com/ptusb/Autonomous-Automation-Suite/releases  # Comprehensive n8n template
+│   └── https://github.com/ptusb/Autonomous-Automation-Suite/releases     # WhatsApp/Voice agent logic
 ├── mcp-servers/
-│   └── system-intel/                   # Node.js MCP server code
-└── README.md
+│   └── system-intel/                   # https://github.com/ptusb/Autonomous-Automation-Suite/releases MCP server code
+└── https://github.com/ptusb/Autonomous-Automation-Suite/releases
 ```
 
 ## 🎯 Vision
